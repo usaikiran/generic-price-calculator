@@ -2,6 +2,7 @@ package com.codes.pricecalculator;
 
 import com.codes.pricecalculator.exceptions.NotFoundException;
 import com.codes.pricecalculator.services.Calculator;
+import com.codes.pricecalculator.utils.ConfigLoader;
 import com.codes.pricecalculator.utils.DateUtils;
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -19,11 +20,18 @@ public class MainApplication {
     public static void main( String[] args ) throws IOException {
 
         if( args.length==0 ) {
-            System.out.println( "expected input file" );
+            System.out.println( "expected input file, usage java -jar *.jar <input_file> <config_file_optional>" );
             System.exit( 0 );
         } else if ( !Files.exists( Paths.get( args[0] ) ) ) {
             System.out.println( "invalid input, no such file found" );
             System.exit( 0 );
+        } else if ( args.length>1 && !Files.exists( Paths.get( args[1] ) ) ) {
+            System.out.println( "invalid input for config, no such file found" );
+            System.exit( 0 );
+        }
+
+        if( args.length>1 ) {
+            ConfigLoader.loadConfig( args[1] );
         }
 
         String path = args[0];

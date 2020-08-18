@@ -1,7 +1,6 @@
 com/codes/pricecalculator/MainApplication.class
 com/codes/pricecalculator/models/PriceTag.class
 com/codes/pricecalculator/services/Calculator.class
-com/codes/pricecalculator/models/Input.class
 com/codes/pricecalculator/utils/ConfigLoader.class
 com/codes/pricecalculator/exceptions/NotFoundException.class
 com/codes/pricecalculator/utils/PriceConfig.class

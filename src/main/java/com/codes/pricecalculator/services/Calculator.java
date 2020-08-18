@@ -9,7 +9,7 @@ import java.util.Date;
 
 public class Calculator {
 
-    private static final PriceConfig priceConfig = ConfigLoader.loadConfig();
+    private static final PriceConfig priceConfig = ConfigLoader.fetchConfig();
 
     public Double calculate( String component, String part, final Date date ) {
         return priceConfig.getPartDetails( component, part ).stream()

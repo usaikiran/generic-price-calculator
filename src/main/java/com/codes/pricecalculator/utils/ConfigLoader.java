@@ -9,19 +9,29 @@ import java.util.HashMap;
 
 public class ConfigLoader {
 
-    public static PriceConfig loadConfig() {
+    private static final String path = "src/main/resources/price-config.json";
+    private static PriceConfig priceConfig;
+
+    public static PriceConfig fetchConfig() {
+
+        if( priceConfig==null ) {
+            loadConfig( path );
+        }
+        return priceConfig;
+    }
+
+    public static void loadConfig( String path ) {
 
         JSONObject config = new JSONObject();
         try {
-            String path = "src/main/resources/price-config.json";
             String stringConfig = Files.readString( Paths.get( path ), StandardCharsets.US_ASCII);
             config = new JSONObject( stringConfig );
-            return new PriceConfig( config );
+
+            priceConfig = new PriceConfig( config );
         } catch ( Exception e ) {
             System.out.println( "error parsing config" );
             e.printStackTrace();
             System.exit( 0 );
         }
-        return new PriceConfig( config );
     }
 }
