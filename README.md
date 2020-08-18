@@ -5,7 +5,8 @@ It requires a config file to be configured which accepts components, its parts a
 ## Usage
 git clone https://github.com/usaikiran/generic-price-calculator<br />
 cd generic-price-calculator<br />
-java -jar PriceCalculator.jar <input_json_file> <config_json_file><br />
+mvn clean package <br />
+java -jar ./target/PriceCalculator-jar-with-dependencies.jar <input_json_file> <config_json_file><br />
 
 ### Config:
 
