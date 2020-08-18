@@ -1,0 +1,14 @@
+{
+    "inputs" : [
+        {
+            "component" : "handle",
+            "part" : "brakes",
+            "date" : "09:05:50 18/05/2020"
+        },
+        {
+            "component" : "frame",
+            "part" : "color",
+            "date" : "09:05:50 18/05/2020"
+        }
+    ]
+}

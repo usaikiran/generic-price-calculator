@@ -1,0 +1,9 @@
+{
+  "inputs" : [
+    {
+      "component" : "<component_name>"
+      "part" : "<part_name>",
+      "date" : "<hh:mm:ss dd/MM/yyyy>"
+    }
+  ]
+}
