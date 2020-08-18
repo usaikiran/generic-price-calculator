@@ -1,7 +1,6 @@
 /media/sai/WorkSpace/Codes/PROJECT_CALC/src/main/java/com/codes/pricecalculator/MainApplication.java
 /media/sai/WorkSpace/Codes/PROJECT_CALC/src/main/java/com/codes/pricecalculator/models/PriceTag.java
 /media/sai/WorkSpace/Codes/PROJECT_CALC/src/main/java/com/codes/pricecalculator/utils/DateUtils.java
-/media/sai/WorkSpace/Codes/PROJECT_CALC/src/main/java/com/codes/pricecalculator/models/Input.java
 /media/sai/WorkSpace/Codes/PROJECT_CALC/src/main/java/com/codes/pricecalculator/services/Calculator.java
 /media/sai/WorkSpace/Codes/PROJECT_CALC/src/main/java/com/codes/pricecalculator/exceptions/NotFoundException.java
 /media/sai/WorkSpace/Codes/PROJECT_CALC/src/main/java/com/codes/pricecalculator/utils/ConfigLoader.java
